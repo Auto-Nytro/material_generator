@@ -1,0 +1,102 @@
+container_color: md.sys.color.surface-container-low;
+container_shadow_color: md.sys.color.shadow;
+
+section_label_color: md.sys.color.on-surface-variant;
+
+icon_button_container_color: md.sys.color.surface-container-low;
+icon_button_container_color_selected: md.sys.color.tertiary-container;
+
+icon_button_icon_color: md.sys.color.on-surface-variant;
+icon_button_icon_color_disabled: md.sys.color.on-surface;
+icon_button_icon_color_disabled: md.sys.color.on-tertiary-container;
+icon_button_icon_color_selected: md.sys.color.on-tertiary-container;
+
+icon_button_state_layer_color_hovered: md.sys.color.on-surface;
+icon_button_state_layer_color_focused: md.sys.color.on-surface;
+icon_button_state_layer_color_pressed: md.sys.color.on-surface;
+icon_button_state_layer_color_selected_hovered: md.sys.color.on-tertiary-container;
+icon_button_state_layer_color_selected_focused: md.sys.color.on-tertiary-container;
+icon_button_state_layer_color_selected_pressed: md.sys.color.on-tertiary-container;
+
+item_container_color: md.sys.color.surface-container-low;
+item_container_color_selected: md.sys.color.tertiary-container;
+item_container_color_container_color_selected_disabled: md.sys.color.tertiary-container;
+
+item_container_opacity_selected_disabled: 0.38;
+
+item_label_color: md.sys.color.on-surface;
+item_label_color_disabled: md.sys.color.on-surface;
+item_label_color_hovered: md.sys.color.on-surface;
+item_label_color_focused: md.sys.color.on-surface;
+item_label_color_pressed: md.sys.color.on-surface;
+item_label_color_selected: md.sys.color.on-tertiary-container;
+item_label_color_selected_disabled: md.sys.color.on-tertiary-container;
+item_label_color_selected_hovered: md.sys.color.on-tertiary-container;
+item_label_color_selected_focused: md.sys.color.on-tertiary-container;
+item_label_color_selected_pressed: md.sys.color.on-tertiary-container;
+
+item_label_opacity_disabled: 0.38;
+item_label_opacity_selected_disabled: 0.38;
+
+item_supporting_text_color: md.sys.color.on-surface-variant;
+item_supporting_text_color_disabled: md.sys.color.on-surface;
+item_supporting_text_color_selected: md.sys.color.on-tertiary-container;
+item_supporting_text_color_selected_hovered: md.sys.color.on-tertiary-container;
+item_supporting_text_color_selected_focused: md.sys.color.on-tertiary-container;
+item_supporting_text_color_selected_pressed: md.sys.color.on-tertiary-container;
+
+item_supporting_text_opacity_disabled: 0.38;
+
+item_trailing_supporting_text_color: md.sys.color.on-surface-variant;
+item_trailing_supporting_text_color_disabled: md.sys.color.on-surface;
+item_trailing_supporting_text_color_selected: md.sys.color.on-tertiary-container;
+item_trailing_supporting_text_color_selected_disabled: md.sys.color.on-tertiary-container;
+item_trailing_supporting_text_color_selected_hovered: md.sys.color.on-tertiary-container;
+item_trailing_supporting_text_color_selected_focused: md.sys.color.on-tertiary-container;
+item_trailing_supporting_text_color_selected_pressed: md.sys.color.on-tertiary-container;
+
+item_trailing_supporting_text_opacity_disabled: 0.38;
+
+item_leading_icon_color: md.sys.color.on-surface-variant;
+item_leading_icon_color_disabled: md.sys.color.on-surface;
+item_leading_icon_color_hovered: md.sys.color.on-surface-variant;
+item_leading_icon_color_focused: md.sys.color.on-surface-variant;
+item_leading_icon_color_pressed: md.sys.color.on-surface-variant;
+item_leading_icon_color_selected: md.sys.color.on-tertiary-container;
+item_leading_icon_color_selected_disabled: md.sys.color.on-tertiary-container;
+item_leading_icon_color_selected_hovered: md.sys.color.on-tertiary-container;
+item_leading_icon_color_selected_focused: md.sys.color.on-tertiary-container;
+item_leading_icon_color_selected_pressed: md.sys.color.on-tertiary-container;
+
+item_leading_icon_opacity_disabled: 0.38;
+item_leading_icon_opacity_selected_disabled: 0.38;
+
+item_trailing_icon_color: md.sys.color.on-surface-variant;
+item_trailing_icon_color_disabled: md.sys.color.on-surface;
+item_trailing_icon_color_hovered: md.sys.color.on-surface-variant;
+item_trailing_icon_color_focused: md.sys.color.on-surface-variant;
+item_trailing_icon_color_pressed: md.sys.color.on-surface-variant;
+item_trailing_icon_color_selected: md.sys.color.on-tertiary-container;
+item_trailing_icon_color_selected_disabled: md.sys.color.on-tertiary-container;
+item_trailing_icon_color_selected_hovered: md.sys.color.on-tertiary-container;
+item_trailing_icon_color_selected_focused: md.sys.color.on-tertiary-container;
+item_trailing_icon_color_selected_pressed: md.sys.color.on-tertiary-container;
+
+item_trailing_icon_opacity_disabled: 0.38;
+item_trailing_icon_opacity_selected_disabled: 0.38;
+
+item_state_layer_color_active: md.sys.color.on-surface;
+item_state_layer_color_hovered: md.sys.color.on-surface;
+item_state_layer_color_focused: md.sys.color.on-surface;
+item_state_layer_color_pressed: md.sys.color.on-surface;
+item_state_layer_color_selected_hovered: md.sys.color.on-tertiary-container;
+item_state_layer_color_selected_focused: md.sys.color.on-tertiary-container;
+item_state_layer_color_selected_pressed: md.sys.color.on-tertiary-container;
+
+item_state_layer_opacity_active: md.sys.state.hover.state-layer-opacity;
+item_state_layer_opacity_hovered: md.sys.state.hover.state-layer-opacity;
+item_state_layer_opacity_focused: md.sys.state.focus.state-layer-opacity;
+item_state_layer_opacity_pressed: md.sys.state.pressed.state-layer-opacity;
+item_state_layer_opacity_selected_hovered: md.sys.state.hover.state-layer-opacity;
+item_state_layer_opacity_selected_focused: md.sys.state.focus.state-layer-opacity;
+item_state_layer_opacity_selected_pressed: md.sys.state.pressed.state-layer-opacity;

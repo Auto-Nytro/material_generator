@@ -1,0 +1,176 @@
+
+Menu_vibrant_container_color: md.sys.color.tertiary-container;
+Menu_vibrant_menu_item_color: md.sys.color.tertiary-container;
+Menu_vibrant_section_label_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_label_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_leading_icon_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_trailing_icon_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_icon_button_container_color: md.sys.color.tertiary-container;
+Menu_vibrant_icon_button_icon_color: md.sys.color.on-tertiary-container;
+
+Menu_vibrant_menu_item_disabled_label_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_disabled_label_text_opacity: 0.38;
+Menu_vibrant_menu_item_disabled_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_disabled_supporting_text_opacity: 0.38;
+Menu_vibrant_menu_item_disabled_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_disabled_trailing_supporting_text_opacity: 0.38;
+Menu_vibrant_menu_item_disabled_leading_icon_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_disabled_leading_icon_opacity: 0.38;
+Menu_vibrant_menu_item_disabled_trailing_icon_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_disabled_trailing_icon_opacity: 0.38;
+Menu_vibrant_icon_button_disabled_icon_color: md.sys.color.on-tertiary-container;
+
+Menu_vibrant_menu_item_hovered_state_layer_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_hovered_state_layer_opacity: md.sys.state.hover.state-layer-opacity;
+Menu_vibrant_menu_item_hovered_label_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_hovered_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_hovered_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_hovered_leading_icon_color: md.sys.color.tertiary;
+Menu_vibrant_menu_item_hovered_trailing_icon_color: md.sys.color.tertiary;
+Menu_vibrant_icon_button_hovered_state_layer_color: md.sys.color.on-tertiary-container;
+
+Menu_vibrant_menu_item_focused_state_layer_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_focused_state_layer_opacity: md.sys.state.focus.state-layer-opacity;
+Menu_vibrant_menu_item_focused_label_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_focused_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_focused_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_focused_leading_icon_color: md.sys.color.tertiary;
+Menu_vibrant_menu_item_focused_trailing_icon_color: md.sys.color.tertiary;
+Menu_vibrant_icon_button_focused_state_layer_color: md.sys.color.on-tertiary-container;
+
+Menu_vibrant_menu_item_pressed_state_layer_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_pressed_state_layer_opacity: md.sys.state.pressed.state-layer-opacity;
+Menu_vibrant_menu_item_pressed_label_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_pressed_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_pressed_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_pressed_leading_icon_color: md.sys.color.tertiary;
+Menu_vibrant_menu_item_pressed_trailing_icon_color: md.sys.color.tertiary;
+Menu_vibrant_icon_button_pressed_state_layer_color: md.sys.color.on-tertiary-container;
+
+Menu_vibrant_menu_item_active_state_layer_color: md.sys.color.on-tertiary-container;
+Menu_vibrant_menu_item_active_state_layer_opacity: 0.08;
+
+Menu_vibrant_menu_item_selected_container_color: md.sys.color.tertiary;
+Menu_vibrant_menu_item_selected_supporting_text_color: md.sys.color.on-tertiary;
+Menu_vibrant_menu_item_selected_trailing_supporting_text_color: md.sys.color.on-tertiary;
+Menu_vibrant_menu_item_selected_label_text_color: md.sys.color.on-tertiary;
+Menu_vibrant_menu_item_selected_leading_icon_color: md.sys.color.on-tertiary;
+Menu_vibrant_menu_item_selected_trailing_icon_color: md.sys.color.on-tertiary;
+Menu_vibrant_icon_button_selected_container_color: md.sys.color.tertiary;
+Menu_vibrant_icon_button_selected_icon_color: md.sys.color.on-tertiary;
+
+Menu_vibrant_menu_item_selected_disabled_label_text_opacity: 0.38;
+Menu_vibrant_menu_item_selected_disabled_supporting_text_opacity: 0.38;
+Menu_vibrant_menu_item_selected_disabled_trailing_supporting_text_opacity: 0.38;
+Menu_vibrant_menu_item_selected_disabled_leading_icon_opacity: 0.38;
+Menu_vibrant_menu_item_selected_disabled_trailing_icon_opacity: 0.38;
+Menu_vibrant_icon_button_selected_disabled_icon_color: md.sys.color.on-tertiary;
+
+Menu_vibrant_menu_item_selected_hovered_state_layer_color: md.sys.color.on-tertiary;
+Menu_vibrant_menu_item_selected_hovered_state_layer_opacity: md.sys.state.hover.state-layer-opacity;
+Menu_vibrant_menu_item_selected_hovered_label_text_color: md.sys.color.on-tertiary;
+
+Menu_vibrant_menu_item_selected_focused_state_layer_color: md.sys.color.on-tertiary;
+Menu_vibrant_menu_item_selected_focused_state_layer_opacity: md.sys.state.focus.state-layer-opacity;
+Menu_vibrant_menu_item_selected_focused_label_text_color: md.sys.color.on-tertiary;
+
+Menu_vibrant_menu_item_selected_pressed_state_layer_color: md.sys.color.on-tertiary;
+Menu_vibrant_menu_item_selected_pressed_state_layer_opacity: md.sys.state.pressed.state-layer-opacity;
+Menu_vibrant_menu_item_selected_pressed_label_text_color: md.sys.color.on-tertiary;
+
+Menu_standard_container_color: md.sys.color.surface-container-low;
+Menu_standard_section_label_text_color: md.sys.color.on-surface-variant;
+Menu_standard_menu_item_container_color: md.sys.color.surface-container-low;
+Menu_standard_menu_item_label_text_color: md.sys.color.on-surface;
+Menu_standard_menu_item_supporting_text_color: md.sys.color.on-surface-variant;
+Menu_standard_container_shadow_color: md.sys.color.shadow;
+Menu_standard_menu_item_leading_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_menu_item_trailing_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_menu_item_trailing_supporting_text_color: md.sys.color.on-surface-variant;
+Menu_standard_icon_button_container_color: md.sys.color.surface-container-low;
+Menu_standard_icon_button_icon_color: md.sys.color.on-surface-variant;
+
+Menu_standard_menu_item_disabled_label_text_color: md.sys.color.on-surface;
+Menu_standard_menu_item_disabled_label_text_opacity: 0.38;
+Menu_standard_menu_item_disabled_supporting_text_color: md.sys.color.on-surface;
+Menu_standard_menu_item_disabled_supporting_text_opacity: 0.38;
+Menu_standard_menu_item_disabled_trailing_supporting_text_color: md.sys.color.on-surface;
+Menu_standard_menu_item_disabled_trailing_supporting_text_opacity: 0.38;
+Menu_standard_menu_item_disabled_leading_icon_color: md.sys.color.on-surface;
+Menu_standard_menu_item_disabled_leading_icon_opacity: 0.38;
+Menu_standard_menu_item_disabled_trailing_icon_color: md.sys.color.on-surface;
+Menu_standard_menu_item_disabled_trailing_icon_opacity: 0.38;
+Menu_standard_disabled_icon_button_icon_color: md.sys.color.on-surface;
+
+Menu_standard_menu_item_hovered_state_layer_color: md.sys.color.on-surface;
+Menu_standard_menu_item_hovered_state_layer_opacity: md.sys.state.hover.state-layer-opacity;
+Menu_standard_menu_item_hovered_label_text_color: md.sys.color.on-surface;
+Menu_standard_menu_item_hovered_leading_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_menu_item_hovered_trailing_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_icon_button_hovered_state_layer_color: md.sys.color.on-surface;
+
+Menu_standard_menu_item_focused_state_layer_color: md.sys.color.on-surface;
+Menu_standard_menu_item_focused_state_layer_opacity: md.sys.state.focus.state-layer-opacity;
+Menu_standard_menu_item_focused_label_text_color: md.sys.color.on-surface;
+Menu_standard_menu_item_focused_leading_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_menu_item_focused_trailing_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_icon_button_focused_state_layer_color: md.sys.color.on-surface;
+
+Menu_standard_menu_item_pressed_state_layer_color: md.sys.color.on-surface;
+Menu_standard_menu_item_pressed_state_layer_opacity: md.sys.state.pressed.state-layer-opacity;
+Menu_standard_menu_item_pressed_label_text_color: md.sys.color.on-surface;
+Menu_standard_menu_item_pressed_leading_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_menu_item_pressed_trailing_icon_color: md.sys.color.on-surface-variant;
+Menu_standard_icon_button_pressed_state_layer_color: md.sys.color.on-surface;
+
+Menu_standard_menu_item_active_state_layer_color: md.sys.color.on-surface;
+Menu_standard_menu_item_active_state_layer_opacity: md.sys.state.hover.state-layer-opacity;
+
+Menu_standard_menu_item_selected_container_color: md.sys.color.tertiary-container;
+Menu_standard_menu_item_selected_label_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_leading_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_trailing_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_icon_button_selected_container_color: md.sys.color.tertiary-container;
+Menu_standard_icon_button_selected_icon_color: md.sys.color.on-tertiary-container;
+
+Menu_standard_menu_item_selected_disabled_container_color: md.sys.color.tertiary-container;
+Menu_standard_menu_item_selected_disabled_container_opacity: 0.38;
+Menu_standard_menu_item_selected_disabled_label_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_disabled_label_text_opacity: 0.38;
+Menu_standard_menu_item_selected_disabled_leading_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_disabled_leading_icon_opacity: 0.38;
+Menu_standard_menu_item_selected_disabled_trailing_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_disabled_trailing_icon_opacity: 0.38;
+Menu_standard_menu_item_selected_disabled_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_icon_button_disabled_icon_color: md.sys.color.on-tertiary-container;
+
+Menu_standard_menu_item_selected_hovered_state_layer_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_hovered_state_layer_opacity: md.sys.state.hover.state-layer-opacity;
+Menu_standard_menu_item_selected_hovered_label_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_hovered_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_hovered_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_hovered_leading_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_hovered_trailing_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_icon_button_selected_hovered_state_layer_color: md.sys.color.on-tertiary-container;
+
+Menu_standard_menu_item_selected_focused_state_layer_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_focused_state_layer_opacity: md.sys.state.focus.state-layer-opacity;
+Menu_standard_menu_item_selected_focused_label_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_focused_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_focused_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_focused_leading_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_focused_trailing_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_icon_button_selected_focused_state_layer_color: md.sys.color.on-tertiary-container;
+
+Menu_standard_menu_item_selected_pressed_state_layer_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_pressed_state_layer_opacity: md.sys.state.pressed.state-layer-opacity;
+Menu_standard_menu_item_selected_pressed_label_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_pressed_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_pressed_trailing_supporting_text_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_pressed_leading_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_menu_item_selected_pressed_trailing_icon_color: md.sys.color.on-tertiary-container;
+Menu_standard_icon_button_selected_pressed_state_layer_color: md.sys.color.on-tertiary-container;

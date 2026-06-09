@@ -1,0 +1,10 @@
+
+readonly listItemLeadingSpace: Dp,
+readonly listItemTrailingSpace: Dp,
+readonly listItemTopSpace: Dp,
+readonly listItemBottomSpace: Dp,
+readonly listItemBetweenSpace: Dp,
+readonly listItemDividerLeadingSpace: Dp,
+readonly listItemDividerTrailingSpace: Dp,
+readonly listItemDividerTopSpace: Dp,
+readonly listItemDividerBottomSpace: Dp,

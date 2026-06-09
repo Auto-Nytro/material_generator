@@ -1,0 +1,42 @@
+Menu_item_height: 44dp;
+
+item_space_top: 8dp;
+item_space_top_horizontal: 6dp;
+item_space_top_horizontal_icon_only: 16dp;
+item_space_leading: 16dp;
+item_space_leading_horizontal: 12dp;
+item_space_leading_horizontal_icon_only: 16dp;
+item_space_between: 12dp;
+item_space_between_horizontal: 12dp;
+item_space_trailing: 16dp;
+item_space_trailing_horizontal: 12dp;
+item_space_trailing_horizontal_icon_only: 16dp;
+item_space_bottom: 8dp;
+item_space_bottom_horizontal: 6dp;
+item_space_bottom_horizontal_icon_only: 16dp;
+
+item_shape: md.sys.shape.corner.extra-small;
+item_shape_selected: md.sys.shape.corner.medium;
+item_shape_horizontal_hovered: md.sys.shape.corner.medium;
+item_shape_horizontal_focused: md.sys.shape.corner.medium;
+item_shape_horizontal_pressed: md.sys.shape.corner.medium;
+item_shape_horizontal_selected_hovered: md.sys.shape.corner.full;
+item_shape_horizontal_selected_focused: md.sys.shape.corner.full;
+item_shape_horizontal_selected_pressed: md.sys.shape.corner.full;
+item_shape_horizontal_icon_only_selected: md.sys.shape.corner.full;
+
+item_1st_child_shape: md.sys.shape.corner.medium;
+item_1st_child_inner_corner_size: md.sys.shape.corner.extra-small;
+
+item_2nd_child_shape: md.sys.shape.corner.medium;
+item_2nd_child_inner_corner_size: md.sys.shape.corner.extra-small;
+
+item_label_style: md.sys.typescale.label-large;
+item_supporting_text_style: md.sys.typescale.body-small;
+item_trailing_supporting_text_style: md.sys.typescale.label-large;
+item_leading_icon_size: 20dp;
+item_trailing_icon_size: 20dp;
+
+item_focus_indicator_color: md.sys.color.secondary;
+item_focus_indicator_thickness: md.sys.state.focus-indicator.thickness;
+item_focus_indicator_outline_offset: md.sys.state.focus-indicator.inner-offset;

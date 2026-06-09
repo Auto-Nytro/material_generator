@@ -1,0 +1,2 @@
+- Use "padding", "margin" and "gap" names instead of generic "space" in component token names
+- Reference Vars.Spacing.* instead of hardcoding spacing values

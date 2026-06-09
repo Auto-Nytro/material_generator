@@ -1,0 +1,9 @@
+readonly listItemTrailingSupportingTextColor: MaybeVar<Color>,
+
+readonly listItemSelectedTrailingSupportingTextColor: MaybeVar<Color>,
+
+readonly listItemSelectedDisabledTrailingSupportingTextColor: MaybeVar<Color>,
+
+readonly listItemSelectedDisabledTrailingSupportingTextOpacity: MaybeVar<Opacity>,
+
+readonly listItemTrailingSupportingTextRole: MaybeVar<TextStyle>,

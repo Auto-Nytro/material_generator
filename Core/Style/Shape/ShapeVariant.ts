@@ -1,0 +1,17 @@
+export enum ShapeVariant {
+  Full,
+  ExtraLargeTop,
+  ExtraLarge,
+  ExtraLargeIncreased,
+  ExtraExtraLarge,
+  LargeTop,
+  LargeEnd,
+  LargeStart,
+  ExtraSmallTop,
+  ExtraSmall,
+  Small,
+  Medium,
+  LargeIncreased,
+  Large,
+  None,
+}

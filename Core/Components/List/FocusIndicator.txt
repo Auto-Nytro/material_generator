@@ -1,0 +1,5 @@
+readonly listItemFocusedIndicatorColor: MaybeVar<Color>,
+
+readonly listItemFocusedIndicatorThickness: MaybeVar<Dp>,
+
+readonly listItemFocusedIndicatorOffset: MaybeVar<Dp>,

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "paths": {
+      "@internal/prelude": [ "./x.ts"],
+      "@internal/css": [ "./Dev/Css/Main.ts" ],
+    }
+  }
+}

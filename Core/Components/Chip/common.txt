@@ -1,0 +1,78 @@
+Height
+32dp
+Shape
+8dp corner radius
+Icon size
+18dp
+Vertical label text alignment
+Center-aligned
+Horizontal label text alignment
+Start-aligned
+Left/right padding
+16dp
+Left/right padding with icon
+8dp
+Padding between elements
+8dp
+
+
+
+Container height
+32dp
+Container shape
+8dp corner radius
+Icon size
+18dp
+Vertical label text alignment
+Center-aligned
+Horizontal label text alignment
+Start-aligned
+Left/right padding
+16dp
+Left/right padding with icon
+8dp
+Padding between elements
+8dp
+
+
+Container height
+32dp
+Container shape
+8dp corner radius
+Icon size
+18dp
+Avatar shape
+12dp corner radius
+Avatar size
+24dp
+Vertical label text alignment
+Center-aligned
+Horizontal label text alignment
+Start-aligned
+Left padding for avatar
+4dp
+Right padding for avatar
+8dp
+Left/right padding for icon
+8dp
+Padding between elements
+8dp
+Target size for close icon
+Min 48dp
+
+Container height
+32dp
+Container shape
+8dp corner radius
+Icon size
+18dp
+Vertical label text alignment
+Center-aligned
+Horizontal label text alignment
+Start-aligned
+Left/right padding without icon
+16dp
+Left/right padding with icon
+8dp
+Padding between elements
+8dp

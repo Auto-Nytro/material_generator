@@ -1,0 +1,15 @@
+menu_container_shape: md.sys.shape.corner.large;
+menu_container_shape_active: md.sys.shape.corner.large;
+menu_container_shape_inactive: md.sys.shape.corner.small;
+menu_container_shape_horizontal: md.sys.shape.corner.full;
+
+menu_container_elevation: md.sys.elevation.level2;
+
+menu_container_space_space_top_horizontal: 8dp;
+menu_container_space_bottom_horizontal: 8dp;
+
+menu_gap: 2dp;
+menu_gap_horizontal_icon_only: 4dp;
+
+menu_group_shape: md.sys.shape.corner.small;
+menu_group_padding: 2dp;

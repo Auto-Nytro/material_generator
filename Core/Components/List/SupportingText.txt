@@ -1,0 +1,8 @@
+
+readonly listItemSupportingTextColor: MaybeVar<Color>,
+readonly listItemSelectedSupportingTextColor: MaybeVar<Color>,
+readonly listItemDisabledSupportingTextColor: MaybeVar<Color>,
+readonly listItemDisabledSupportingTextOpacity: MaybeVar<Opacity>,
+readonly listItemSelectedDisabledSupportingTextColor: MaybeVar<Color>,
+readonly listItemSelectedDisabledSupportingTextOpacity: MaybeVar<Opacity>,
+readonly listItemSupportingTextRole: MaybeVar<TextStyle>,

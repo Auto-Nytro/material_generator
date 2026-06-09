@@ -1,0 +1,13 @@
+readonly listItemOverlineColor: MaybeVar<Color>,
+
+readonly listItemSelectedOverlineColor: MaybeVar<Color>,
+
+readonly listItemDisabledOverlineColor: MaybeVar<Color>,
+
+readonly listItemDisabledOverlineOpacity: MaybeVar<Opacity>,
+
+readonly listItemSelectedDisabledOverlineColor: MaybeVar<Color>,
+
+readonly listItemSelectedDisabledOverlineOpacity: MaybeVar<Opacity>,
+
+readonly listItemOverlineRole: MaybeVar<TextStyle>,
