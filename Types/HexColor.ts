@@ -17,7 +17,12 @@ export const toString = (it: HexColor): `#${string}` => {
   return it.value;
 };
 
+export const withAlpha = (it: HexColor): HexColor => {
+
+};
+
 export const HexColor = {
   fromString,
   toString,
+  withAlpha,
 };

@@ -4,7 +4,7 @@
     "noEmit": true,
     "paths": {
       "@internal/prelude": [ "./x.ts"],
-      "@internal/css": [ "./Dev/Css/Main.ts" ],
+      "@internal/css": [ "./Generator/Css/Main.ts" ],
     }
   }
 }
