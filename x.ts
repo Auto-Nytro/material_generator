@@ -31,5 +31,4 @@ export * as ShapeVariant from "./Core/Style/Shape/ShapeVariant.ts"
 
 export { ConcentricRadiusRule } from "./Core/Style/Shape/ConcentricRadiusRule.ts";
 
-export { ElevatedButton } from "./Core/Components/Button/Main.ts"
-export { FilledButton } from "./Core/Components/Button/Main.ts"
+export { ButtonSize, ElevatedButton, FilledButton, OutlinedButton, TextButton, TonalButton } from "./Core/Components/Button/Main.ts"
