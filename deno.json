@@ -1,5 +1,5 @@
 {
   "imports": {
-    "@internal/prelude": "./x.ts"
+    "@internal/prelude": "./Main.ts"
   }
 }

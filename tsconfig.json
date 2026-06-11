@@ -3,7 +3,7 @@
     "allowImportingTsExtensions": true,
     "noEmit": true,
     "paths": {
-      "@internal/prelude": [ "./x.ts"],
+      "@internal/prelude": [ "./Main.ts"],
       "@internal/css": [ "./Generator/Css/Main.ts" ],
     }
   }

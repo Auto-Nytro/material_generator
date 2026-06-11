@@ -1,7 +1,8 @@
-import { M } from "@internal/css";
+// I'm currently trying to figure how the Stylesheet's and 
+// Style's apis should look like by writing button styles
+// to them and adjusting the api as needed.
 
-const ColorWithOpacity = null as any;
-const withAlpha = (it: any, other: any): any => {};
+import { M } from "@internal/css";
 
 export class Stylesheet {
   forClass(cssClass: string): Style { return new Style(); }
@@ -157,30 +158,15 @@ export interface Context {
       readonly outlined: M.OutlinedButton,
       readonly text: M.TextButton,
     }
-    filledButton: M.FilledButton,
-    elevation: M.ElevationScheme,
   }
-  readonly vars: {
-    readonly colorPalette: Record<string, { name: string, value: string }>,
-    readonly colorScheme: Record<string, { name: string, value: string }>,
-    readonly opacities: Record<string, { name: string, value: string }>,
-    readonly shadowElevation: Record<string, { name: string, value: string }>,
-    readonly focusIndicator: Record<string, { name: string, value: string }>,
-    readonly shapes: Record<string, { name: string, value: string }>,
-    readonly springs: Record<string, { name: string, value: string }>,
-    readonly elevation0: string,
-    readonly elevation1: string,
-    readonly elevation2: string,
-    readonly elevation3: string,
-    readonly elevation4: string,
-    readonly elevation5: string,
-  }
-  readonly class: {
+
+  readonly entities: {
     readonly button: string,
     readonly buttonIcon: string,
     readonly buttonLabel: string,
   }
-  readonly modifier: {
+
+  readonly modifiers: {
     readonly xs: string,
     readonly sm: string,
     readonly md: string,
@@ -201,116 +187,126 @@ export interface Context {
   },
 }
 
-const Tonal = (context: Context, stylesheet: Stylesheet) => {
-  const style = context.style.filledButton;
-  const button = context.classes.button;
-  const tonal = button.tonal;
+const Button = (context: Context, stylesheet: Stylesheet) => {
+  const style = context.style.button;
+  const { button } = context.entities;
+  const { filled, toggle, selected } = context.modifiers;
 
-  stylesheet.forClass(tonal.container)
+  stylesheet.forClass(button)
+    /** ------------------
+     *  Common Style
+     *  ------------------
+     */
+    .display("flex")
+    .flexFlow("row nowrap")
     .onDisabled(s => s.backgroundColorTranslucent(
-      style.containerColorDisabled, 
-      style.containerOpacityDisabled,
+      style.filled.containerColorDisabled, 
+      style.filled.containerOpacityDisabled,
     ))
-    .shadowColor(style.containerShadowColor)
+    .shadowColor(style.filled.containerShadowColor)
     .elevationLevelOnStates({
-      normal: style.containerElevation,
-      pressed: style.containerElevationPressed,
-      focused: style.containerElevationFocused,
-      disabled: style.containerElevationDisabled,
+      normal: style.filled.containerElevation,
+      pressed: style.filled.containerElevationPressed,
+      focused: style.filled.containerElevationFocused,
+      disabled: style.filled.containerElevationDisabled,
     })
     .onStates({
-      pressed: s => s.stateLayerOpacity(style.stateLayerOpacityPressed),
-      hovered: s => s.stateLayerOpacity(style.stateLayerOpacityHovered),
-      focused: s => s.stateLayerOpacity(style.stateLayerOpacityFocused),
+      pressed: s => s.stateLayerOpacity(style.filled.stateLayerOpacityPressed),
+      hovered: s => s.stateLayerOpacity(style.filled.stateLayerOpacityHovered),
+      focused: s => s.stateLayerOpacity(style.filled.stateLayerOpacityFocused),
     })
-    .onModifier(tonal.containerRegular, s => s 
-      .backgroundColor(style.containerColor)
-      .onStates({
-        pressed: s => s.stateLayerColor(style.stateLayerColorPressed),
-        hovered: s => s.stateLayerColor(style.stateLayerColorHovered),
-        focused: s => s.stateLayerColor(style.stateLayerColorFocused),
-      })
-    )
-    .onModifier(tonal.containerToggle, s => s
-      .onToggleModifier(tonal.containerSelected, {
+
+    /** ------------------
+     *  Filled Style
+     *  ------------------
+     */
+    .onModifier(filled, s => s.onToggleModifier(toggle, {
+      off: s => s
+        .backgroundColor(style.filled.containerColor)
+        .onStates({
+          pressed: s => s.stateLayerColor(style.filled.stateLayerColorPressed),
+          hovered: s => s.stateLayerColor(style.filled.stateLayerColorHovered),
+          focused: s => s.stateLayerColor(style.filled.stateLayerColorFocused),
+        }),
+      on: s => s.onToggleModifier(selected, {
         off: s => s 
-          .backgroundColor(style.containerColorUnselected)
+          .backgroundColor(style.filled.containerColorUnselected)
           .onStates({
-            pressed: s => s.stateLayerColor(style.stateLayerColorUnselectedPressed),
-            hovered: s => s.stateLayerColor(style.stateLayerColorUnselectedHovered),
-            focused: s => s.stateLayerColor(style.stateLayerColorUnselectedFocused),
+            pressed: s => s.stateLayerColor(style.filled.stateLayerColorUnselectedPressed),
+            hovered: s => s.stateLayerColor(style.filled.stateLayerColorUnselectedHovered),
+            focused: s => s.stateLayerColor(style.filled.stateLayerColorUnselectedFocused),
           }),
 
         on: s => s 
-          .backgroundColor(style.containerColorSelected)
+          .backgroundColor(style.filled.containerColorSelected)
           .onStates({
-            pressed: s => s.stateLayerColor(style.stateLayerColorSelectedPressed),
-            hovered: s => s.stateLayerColor(style.stateLayerColorSelectedHovered),
-            focused: s => s.stateLayerColor(style.stateLayerColorSelectedFocused),
+            pressed: s => s.stateLayerColor(style.filled.stateLayerColorSelectedPressed),
+            hovered: s => s.stateLayerColor(style.filled.stateLayerColorSelectedHovered),
+            focused: s => s.stateLayerColor(style.filled.stateLayerColorSelectedFocused),
           }),
       })
-    );
+    }))
 
   stylesheet.forClass(tonal.label)
     .extend(button.label)
-    .color(style.labelColor)
+    .color(style.filled.labelColor)
     .onDisabled(s => s.colorTranslucent(
-      style.labelColorDisabled,
-      style.labelOpacityDisabled,
+      style.filled.labelColorDisabled,
+      style.filled.labelOpacityDisabled,
     ))
     .onModifier(tonal.labelRegular, s => s
       .onStates({
-        normal: s => s.color(style.labelColor),
-        pressed: s => s.color(style.labelColorPressed),
-        hovered: s => s.color(style.labelColorHovered),
-        focused: s => s.color(style.labelColorFocused),
+        normal: s => s.color(style.filled.labelColor),
+        pressed: s => s.color(style.filled.labelColorPressed),
+        hovered: s => s.color(style.filled.labelColorHovered),
+        focused: s => s.color(style.filled.labelColorFocused),
       })
     )
     .onModifier(tonal.labelToggle, s => s 
       .onToggleModifier(tonal.labelSelected, {
         off: s => s.onStates({
-          normal: s => s.color(style.labelColorUnselected),
-          pressed: s => s.color(style.labelColorUnselectedPressed),
-          hovered: s => s.color(style.labelColorUnselectedHovered),
-          focused: s => s.color(style.labelColorUnselectedFocused),
+          normal: s => s.color(style.filled.labelColorUnselected),
+          pressed: s => s.color(style.filled.labelColorUnselectedPressed),
+          hovered: s => s.color(style.filled.labelColorUnselectedHovered),
+          focused: s => s.color(style.filled.labelColorUnselectedFocused),
         }),
         on: s => s.onStates({
-          normal: s => s.color(style.labelColorSelected),
-          pressed: s => s.color(style.labelColorSelectedPressed),
-          hovered: s => s.color(style.labelColorSelectedHovered),
-          focused: s => s.color(style.labelColorSelectedFocused),
+          normal: s => s.color(style.filled.labelColorSelected),
+          pressed: s => s.color(style.filled.labelColorSelectedPressed),
+          hovered: s => s.color(style.filled.labelColorSelectedHovered),
+          focused: s => s.color(style.filled.labelColorSelectedFocused),
         }),
       })
     )
 
   stylesheet.forClass(tonal.icon)
     .extend(button.icon)
-    .color(style.iconColor)
+    .color(style.filled.iconColor)
     .onDisabled(s => s.colorTranslucent(
-      style.iconColorDisabled,
-      style.iconOpacityDisabled,
+      style.filled.iconColorDisabled,
+      style.filled.iconOpacityDisabled,
     ))
     .onModifier(tonal.iconRegular, s => s
       .onStates({
-        normal: s => s.color(style.iconColor),
-        pressed: s => s.color(style.iconColorPressed),
-        hovered: s => s.color(style.iconColorHovered),
-        focused: s => s.color(style.iconColorFocused),
+        normal: s => s.color(style.filled.iconColor),
+        pressed: s => s.color(style.filled.iconColorPressed),
+        hovered: s => s.color(style.filled.iconColorHovered),
+        focused: s => s.color(style.filled.iconColorFocused),
       })
     )
     .onModifier(tonal.iconToggle, s => s 
       .onToggleModifier(tonal.iconSelected, {
         off: s => s.onStates({
-          normal: s => s.color(style.iconColorUnselected),
-          pressed: s => s.color(style.iconColorUnselectedPressed),
-          hovered: s => s.color(style.iconColorUnselectedHovered),
-          focused: s => s.color(style.iconColorUnselectedFocused),
+          normal: s => s.color(style.filled.iconColorUnselected),
+          pressed: s => s.color(style.filled.iconColorUnselectedPressed),
+          hovered: s => s.color(style.filled.iconColorUnselectedHovered),
+          focused: s => s.color(style.filled.iconColorUnselectedFocused),
         }),
         on: s => s.onStates({
-          normal: s => s.color(style.iconColorSelected),
-          pressed: s => s.color(style.iconColorSelectedPressed),
-          hovered: s => s.color(style.iconColorSelectedHovered),
-          focused: s => s.color(style.iconColorSelectedFocused),
+          normal: s => s.color(style.filled.iconColorSelected),
+          pressed: s => s.color(style.filled.iconColorSelectedPressed),
+          hovered: s => s.color(style.filled.iconColorSelectedHovered),
+          focused: s => s.color(style.filled.iconColorSelectedFocused),
         }),
       })
     )
@@ -318,8 +314,8 @@ const Tonal = (context: Context, stylesheet: Stylesheet) => {
 
 const ExtraSmall = (context: Context, stylesheet: Stylesheet) => {
   const style = context.style.button.xs;
-  const { button } = context.class;
-  const { toggle, selected, square, round, xs } = context.modifier;
+  const { button } = context.entities;
+  const { toggle, selected, square, round, xs } = context.modifiers;
 
   stylesheet.forClass(button).onModifier(xs, s => s 
     .height(style.containerHeight)
@@ -342,8 +338,8 @@ const ExtraSmall = (context: Context, stylesheet: Stylesheet) => {
 
 const Small = (context: Context, stylesheet: Stylesheet) => {
   const style = context.style.button.sm;
-  const { button } = context.class;
-  const { toggle, selected, square, round, sm } = context.modifier;
+  const { button } = context.entities;
+  const { toggle, selected, square, round, sm } = context.modifiers;
 
   stylesheet.forClass(button).onModifier(sm, s => s 
     .height(style.containerHeight)
@@ -366,8 +362,8 @@ const Small = (context: Context, stylesheet: Stylesheet) => {
 
 const Medium = (context: Context, stylesheet: Stylesheet) => {
   const style = context.style.button.md;
-  const { button } = context.class;
-  const { toggle, selected, square, round, md } = context.modifier;
+  const { button } = context.entities;
+  const { toggle, selected, square, round, md } = context.modifiers;
 
   stylesheet.forClass(button).onModifier(md, s => s 
     .height(style.containerHeight)
@@ -390,8 +386,8 @@ const Medium = (context: Context, stylesheet: Stylesheet) => {
 
 const Large = (context: Context, stylesheet: Stylesheet) => {
   const style = context.style.button.lg;
-  const { button } = context.class;
-  const { toggle, selected, square, round, lg } = context.modifier;
+  const { button } = context.entities;
+  const { toggle, selected, square, round, lg } = context.modifiers;
 
   stylesheet.forClass(button).onModifier(lg, s => s 
     .height(style.containerHeight)
@@ -414,8 +410,8 @@ const Large = (context: Context, stylesheet: Stylesheet) => {
 
 const ExtraLarge = (context: Context, stylesheet: Stylesheet) => {
   const style = context.style.button.xl;
-  const { button } = context.class;
-  const { toggle, selected, square, round, xl } = context.modifier;
+  const { button } = context.entities;
+  const { toggle, selected, square, round, xl } = context.modifiers;
 
   stylesheet.forClass(button).onModifier(xl, s => s 
     .height(style.containerHeight)
@@ -437,8 +433,8 @@ const ExtraLarge = (context: Context, stylesheet: Stylesheet) => {
 };
 
 const Label = (context: Context, stylesheet: Stylesheet) => {
-  const { button, buttonLabel } = context.class;
-  const { filled, tonal, elevated, outlined, text, toggle, selected, xs, sm, md, lg, xl } = context.modifier;
+  const { button, buttonLabel } = context.entities;
+  const { filled, tonal, elevated, outlined, text, toggle, selected, xs, sm, md, lg, xl } = context.modifiers;
   const style = context.style.button;
 
   /** ----------------
@@ -604,8 +600,8 @@ const Label = (context: Context, stylesheet: Stylesheet) => {
 };
 
 const Icon = (context: Context, stylesheet: Stylesheet) => {
-  const { button, buttonIcon } = context.class;
-  const { filled, tonal, elevated, outlined, text, toggle, selected, xs, sm, md, lg, xl } = context.modifier;
+  const { button, buttonIcon } = context.entities;
+  const { filled, tonal, elevated, outlined, text, toggle, selected, xs, sm, md, lg, xl } = context.modifiers;
   const style = context.style.button;
 
   /** ----------------
@@ -772,8 +768,8 @@ const Icon = (context: Context, stylesheet: Stylesheet) => {
 
 const IconSizes = (context: Context, stylesheet: Stylesheet) => {
   const style = context.style.button;
-  const { button, buttonIcon } = context.class;
-  const { xs, sm, md, lg, xl } = context.modifier;
+  const { button, buttonIcon } = context.entities;
+  const { xs, sm, md, lg, xl } = context.modifiers;
 
   stylesheet.forClass(buttonIcon).iconSizeOnAncestorStates(button, {
     [xs]: s => s.iconSize(style.xs.iconSize),
@@ -782,24 +778,4 @@ const IconSizes = (context: Context, stylesheet: Stylesheet) => {
     [lg]: s => s.iconSize(style.lg.iconSize),
     [xl]: s => s.iconSize(style.xl.iconSize),
   });
-};
-
-
-// --- Main Root Function ---
-
-const writeSizes = (context: Context, stylesheet: Stylesheet) => {
-  const { button } = context.class;
-
-  const selector = stylesheet.forSelector(button)
-    .display("flex")
-    .flexFlow("row nowrap");
-
-  ExtraSmall(context, selector);
-  writeSmSize(context, selector);
-  writeMdSize(context, selector);
-  writeLgSize(context, selector);
-  writeXlSize(context, selector);
-
-  LabelSizes(context, stylesheet);
-  IconSizes(context, stylesheet);
 };
