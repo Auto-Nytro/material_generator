@@ -1,0 +1,14 @@
+.scroll-viewport {
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+  overscroll-behavior-y: none; /* Turn off native browser bounce entirely */
+}
+
+.scroll-content {
+  width: 100%;
+  /* Ensures the stretch expands downward when pulling from the top */
+  transform-origin: top center; 
+  /* Smoothly animates the container snapping back to normal scale */
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1); 
+}
